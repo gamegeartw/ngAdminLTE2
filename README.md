@@ -8,9 +8,9 @@ If you like this project, please give it a star.
 
 ## Include packages
  - [Angular 14.x](https://angular.io/)
- - [AdminLTE](https://adminlte.io/)
- - [Bootstrap](https://getbootstrap.com/)
- - [Font Awesome](https://fontawesome.com/)
+ - [AdminLTE 2.4.18](https://adminlte.io/)
+ - [Bootstrap 3.3.7](https://getbootstrap.com/)
+ - [Font Awesome 4](https://fontawesome.com/)
  - [ng-block-ui](https://github.com/kuuurt13/ng-block-ui)
 
 
