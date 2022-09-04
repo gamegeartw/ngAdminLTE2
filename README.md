@@ -1,6 +1,18 @@
 # NgAdminLTE2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6 and use AdminLTE2.4.18.
+
+I will try to keep it up to date and add packages with the latest version of AdminLTE 2.
+
+If you like this project, please give it a star.
+
+## Include packages
+ - [Angular](https://angular.io/)
+ - [AdminLTE](https://adminlte.io/)
+ - [Bootstrap](https://getbootstrap.com/)
+ - [Font Awesome](https://fontawesome.com/)
+ - [ng-block-ui](https://github.com/kuuurt13/ng-block-ui)
+
 
 ## Development server
 
