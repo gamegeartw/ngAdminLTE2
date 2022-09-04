@@ -7,7 +7,7 @@ I will try to keep it up to date and add packages with the latest version of Adm
 If you like this project, please give it a star.
 
 ## Include packages
- - [Angular](https://angular.io/)
+ - [Angular 14.x](https://angular.io/)
  - [AdminLTE](https://adminlte.io/)
  - [Bootstrap](https://getbootstrap.com/)
  - [Font Awesome](https://fontawesome.com/)
