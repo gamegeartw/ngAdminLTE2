@@ -12,6 +12,7 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MainComponent } from './modules/main/main.component';
 import { BreadCrumbComponent } from './components/bread-crumb/bread-crumb.component';
+import {ToastrModule} from "ngx-toastr";
 
 
 
@@ -31,6 +32,7 @@ import { BreadCrumbComponent } from './components/bread-crumb/bread-crumb.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ToastrModule.forRoot(),
     BlockUIModule.forRoot()
   ],
   providers: [],

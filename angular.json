@@ -8,6 +8,9 @@
       "schematics": {
         "@schematics/angular:application": {
           "strict": true
+        },
+        "@schematics/angular:component": {
+          "style": "scss"
         }
       },
       "root": "",
@@ -27,7 +30,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [
 
@@ -104,5 +107,7 @@
       }
     }
   },
-  "defaultProject": "ngAdminLTE2"
+  "cli": {
+    "analytics": "71b4a607-e4df-487e-9f69-d3f032aa8890"
+  }
 }
