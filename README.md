@@ -7,12 +7,20 @@ I will try to keep it up to date and add packages with the latest version of Adm
 If you like this project, please give it a star.
 
 ## Include packages
- - [Angular 14.x](https://angular.io/)
+ - [Angular 14](https://angular.io/)
  - [AdminLTE 2.4.18](https://adminlte.io/)
  - [Bootstrap 3.3.7](https://getbootstrap.com/)
  - [Font Awesome 4](https://fontawesome.com/)
  - [ng-block-ui](https://github.com/kuuurt13/ng-block-ui)
  - [ngx-toastr 15.0.0](https://github.com/scttcper/ngx-toastr)
+
+## Sidebar setting
+ - file: assets/SiteMap.ts
+ - property:
+   - name: menu and page title.
+   - subTitle: page subtitle.
+   - iconClasses: menu icon.
+   - path: menu routerLink.
 
 ## Development server
 
