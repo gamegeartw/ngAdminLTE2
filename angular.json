@@ -27,17 +27,27 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              {
-                "glob": "**/*",
-                "input": "./node_modules/admin-lte",
-                "output": "/assets/admin-lte"
-              }
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
             ],
             "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/admin-lte/dist/js/adminlte.min.js",
+              "node_modules/admin-lte/bower_components/fastclick/lib/fastclick.js",
+              "node_modules/admin-lte/bower_components/jquery-slimScroll/jquery.slimscroll.min.js",
+
+              "node_modules/admin-lte/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js",
+              "node_modules/admin-lte/bower_components/jquery-knob/dist/jquery.knob.min.js",
+              "node_modules/admin-lte/bower_components/moment/min/moment.min.js",
+              "node_modules/admin-lte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js",
+              "node_modules/admin-lte/plugins/iCheck/icheck.min.js",
+              "node_modules/admin-lte/bower_components/datatables.net/js/jquery.dataTables.min.js",
+              "node_modules/admin-lte/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js",
+              "node_modules/admin-lte/bower_components/select2/dist/js/select2.full.min.js",
+              "node_modules/admin-lte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"
 
             ]
           },
@@ -46,8 +56,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "5000kb",
+                  "maximumError": "10mb"
                 },
                 {
                   "type": "anyComponentStyle",
