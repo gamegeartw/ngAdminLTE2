@@ -4,6 +4,7 @@ import {MenuItem} from "../menu-item";
 export const Sitemap:MenuItem[] = [
   {
     name: 'DashBoard',
+    subTitle: 'Handy Dashboard',
     iconClasses: 'fa fa-dashboard',
     path: ['/']
   },
@@ -16,7 +17,6 @@ export const Sitemap:MenuItem[] = [
     name: 'Sub Menu',
     iconClasses: 'fa fa-folder',
     children: [
-
       {
         name: 'Blank Page',
         iconClasses: 'fa fa-file',

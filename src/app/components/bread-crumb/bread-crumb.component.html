@@ -1,11 +1,10 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
   <h1>
-    Dashboard
-    <small>Control panel</small>
+    {{menuItem?.name}}
+    <small>{{menuItem?.subTitle}}</small>
   </h1>
   <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li class="active">{{this.title}}</li>
+    <li *ngFor="let item of breadcrumbs" class="active"><i  [className]="item.iconClasses"></i> {{item.name}}</li>
   </ol>
 </section>
