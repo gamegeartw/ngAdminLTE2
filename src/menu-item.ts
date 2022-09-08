@@ -5,4 +5,5 @@ export interface MenuItem {
     path?: string[];
     children?: MenuItem[];
     parent?: MenuItem;
+    show?: boolean;
 }

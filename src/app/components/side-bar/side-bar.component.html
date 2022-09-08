@@ -12,9 +12,9 @@
       </div>
     </div>
 
-    <form action="#" method="get" class="sidebar-form">
+    <form action="#" method="get" class="sidebar-form" (ngSubmit)="onSearch(f)" #f="ngForm">
       <div class="input-group">
-        <input type="text" name="q" class="form-control" placeholder="Search...">
+        <input type="text" name="q" class="form-control" id="q" placeholder="Search..." ngModel #mSearch="ngModel" required>
         <span class="input-group-btn">
       <button type="submit" name="search" id="search-btn" class="btn btn-flat">
       <i class="fa fa-search"></i>
@@ -27,7 +27,7 @@
     <ul class="sidebar-menu tree" data-widget="tree">
       <li class="header">{{"MAIN NAVIGATION"|translate|uppercase}}</li>
       <ng-container *ngFor="let item of menuItems">
-        <li class="treeview">
+        <li class="treeview" *ngIf="item.show">
           <a [routerLink]="item.path" style="cursor: pointer">
             <i [className]="item.iconClasses"></i> <span>{{item.name| translate}}</span>
             <span class="pull-right-container" *ngIf="item.children">

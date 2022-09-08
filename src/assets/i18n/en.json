@@ -1,5 +1,7 @@
 {
   "DashBoard": "DashBoard 1",
   "DashBoard SubTitle": "DashBoard SubTitle",
-  "MAIN NAVIGATION": "main navigation"
+  "MAIN NAVIGATION": "main navigation",
+  "error": "Error",
+  "searchError": "Please enter a valid search term"
 }

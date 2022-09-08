@@ -8,8 +8,10 @@ const routes: Routes = [
       { path: '',data:{breadcrumb:'DashBoard',title:'DashBoard'}, loadChildren: () => import('./modules/main/dash-board/dash-board.module').then(m => m.DashBoardModule) },
       { path: 'SubMenu', loadChildren: () => import('./modules/main/sub-menu/sub-menu.module').then(m => m.SubMenuModule) },
       { path: 'Page1', loadChildren: () => import('./modules/main/page1/page1.module').then(m => m.Page1Module) },
+      { path: 'Search', loadChildren: () => import('./modules/main/search/search.module').then(m => m.SearchModule) },
     ]},
   {path: 'login', component:LoginComponent,  pathMatch: 'full'},
+
 
 
   {path: '**', redirectTo: '/'},

@@ -31,7 +31,9 @@ export class BreadCrumbComponent implements OnInit {
 
   getBreadcrumbs(item:MenuItem):MenuItem[] {
     let result:MenuItem[]=[];
+    if (item==undefined) return result;
     result.push(item);
+
     if(item.parent===undefined) return result;
     result.push(...this.getBreadcrumbs(item.parent)) ;
 

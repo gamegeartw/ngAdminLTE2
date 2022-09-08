@@ -28,7 +28,8 @@ export class MainComponent implements OnInit {
         };
         let items = this.getItems(mainItem,this.sitemap);
         console.log("items=", items);
-        let item = items.find(item => change=== item.path?.join('/'));
+
+        let item = items.find(item => change.split("?")[0]=== item.path?.join('/'));
         console.log("item=", item);
         this.menuItem=item;
       }

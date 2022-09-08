@@ -16,6 +16,8 @@ import {ToastrModule} from "ngx-toastr";
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import {HttpClient,HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -38,6 +40,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     ToastrModule.forRoot(),
     BlockUIModule.forRoot(),
     TranslateModule.forRoot({
@@ -47,7 +50,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       },
       defaultLanguage: 'en'
-    })
+    }),
+    FormsModule
   ],
   providers: [],
   exports: [
