@@ -36,7 +36,7 @@
           </a>
           <ul class="treeview-menu">
             <ng-container *ngFor="let subItem of item.children">
-              <li><a routerLink="{{subItem.path}}"><i class="fa fa-circle-o"></i> {{subItem.name}}</a></li>
+              <li><a routerLink="{{subItem.path}}"><i class="fa fa-circle-o"></i> {{subItem.name|translate}}</a></li>
             </ng-container>
           </ul>
         </li>

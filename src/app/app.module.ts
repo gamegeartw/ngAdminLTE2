@@ -13,8 +13,12 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MainComponent } from './modules/main/main.component';
 import { BreadCrumbComponent } from './components/bread-crumb/bread-crumb.component';
 import {ToastrModule} from "ngx-toastr";
-
-
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import {HttpClient} from "@angular/common/http";
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 
 @NgModule({
@@ -33,7 +37,14 @@ import {ToastrModule} from "ngx-toastr";
     BrowserModule,
     AppRoutingModule,
     ToastrModule.forRoot(),
-    BlockUIModule.forRoot()
+    BlockUIModule.forRoot(),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   exports: [
