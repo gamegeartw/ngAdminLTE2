@@ -25,18 +25,18 @@
 
 
     <ul class="sidebar-menu tree" data-widget="tree">
-      <li class="header">MAIN NAVIGATION</li>
+      <li class="header">{{"MAIN NAVIGATION"|translate|uppercase}}</li>
       <ng-container *ngFor="let item of menuItems">
         <li class="treeview">
           <a [routerLink]="item.path" style="cursor: pointer">
-            <i [className]="item.iconClasses"></i> <span>{{item.name}}</span>
+            <i [className]="item.iconClasses"></i> <span>{{item.name| translate}}</span>
             <span class="pull-right-container" *ngIf="item.children">
             <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
             <ng-container *ngFor="let subItem of item.children">
-              <li><a routerLink="{{subItem.path}}"><i class="fa fa-circle-o"></i> {{subItem.name|translate}}</a></li>
+              <li><a routerLink="{{subItem.path}}"><i class="fa fa-circle-o"></i> {{ subItem.name | translate}}</a></li>
             </ng-container>
           </ul>
         </li>
