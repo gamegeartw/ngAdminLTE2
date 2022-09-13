@@ -14,6 +14,9 @@ If you like this project, please give it a star.
  - [ng-block-ui](https://github.com/kuuurt13/ng-block-ui)
  - [ngx-toastr 15.0.0](https://github.com/scttcper/ngx-toastr)
 
+## Demo
+  See [demo](https://gamegeartw.github.io/)
+
 ## Sidebar setting
  - file: assets/SiteMap.ts
  - property:
