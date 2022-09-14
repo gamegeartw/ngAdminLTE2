@@ -15,7 +15,8 @@ export class LoginComponent implements OnInit {
   password:string='';
 
   constructor(public langService:TranslateService,private route:ActivatedRoute,private router:Router) {
-
+    const browserLang = langService.getBrowserLang();
+    langService.use(browserLang.match(/en|fr/) ? browserLang : 'en');
   }
 
   ngOnInit(): void {
@@ -29,15 +30,11 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  doLang($event: Event) {
-    console.log($event.target);
-    console.log(this.lang);
-    this.langService.setDefaultLang(this.lang);
-  }
 
   doSubmit() {
     console.log(this.user);
     console.log(this.password);
+
     // TODO: Login Service
     this.router.navigate(["/"]);
   }
