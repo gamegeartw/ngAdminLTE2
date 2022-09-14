@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Sitemap} from "../../../assets/SiteMap";
-import {MenuItem} from "../../../menu-item";
+import {MenuItem} from "../../../assets/menu-item";
 import {FormsModule, NgForm} from "@angular/forms";
 import {Router} from "@angular/router";
 import {ToastrService} from "ngx-toastr";

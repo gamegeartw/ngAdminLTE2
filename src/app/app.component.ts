@@ -10,5 +10,8 @@ import {TranslateService} from "@ngx-translate/core";
 
 
 export class AppComponent {
+  constructor(public translate: TranslateService) {
+    translate.addLangs(['zh-cn','zh-tw']);
+  }
   title = 'ngAdminLTE2';
 }

@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {SharedService} from "../../services/shared.service";
 import {from, last} from "rxjs";
 import {Sitemap} from "../../../assets/SiteMap";
-import {MenuItem} from "../../../menu-item";
+import {MenuItem} from "../../../assets/menu-item";
 
 @Component({
   selector: 'app-main',

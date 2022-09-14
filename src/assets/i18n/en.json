@@ -3,5 +3,13 @@
   "DashBoard SubTitle": "DashBoard SubTitle",
   "MAIN NAVIGATION": "main navigation",
   "error": "Error",
-  "searchError": "Please enter a valid search term"
+  "searchError": "Please enter a valid search term",
+  "zh-tw": "正體中文(zh-tw)",
+  "zh-cn": "簡體中文(zh-cn)",
+  "en": "English(en)",
+  "email": "Email or Windows Account",
+  "password": "Password",
+  "selectLang": "Select language...",
+  "Remember Me": "Remember Me"
+
 }

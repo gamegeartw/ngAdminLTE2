@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
 import {BlockUI, BlockUIService, NgBlockUI} from "ng-block-ui";
 import {ToastrService} from "ngx-toastr";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-dash-board',
@@ -11,11 +12,11 @@ import {ToastrService} from "ngx-toastr";
 export class DashBoardComponent implements OnInit {
   @BlockUI() blockUI: NgBlockUI | undefined;
   constructor(
+    private translate:TranslateService,
     private route:Router,
     private toastr: ToastrService,
     private activeRouter:ActivatedRoute) {
-    console.log(this.route);
-    console.log(this.activeRouter);
+    console.log("Current Lang=",this.translate.getDefaultLang());
   }
 
   ngOnInit(): void {

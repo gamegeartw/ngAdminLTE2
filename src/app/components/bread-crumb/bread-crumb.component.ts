@@ -1,6 +1,6 @@
 import {Component, Input, OnInit, SimpleChanges} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {MenuItem} from "../../../menu-item";
+import {MenuItem} from "../../../assets/menu-item";
 
 @Component({
   selector: 'app-bread-crumb',
