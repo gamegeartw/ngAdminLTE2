@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {Sitemap} from "../../../assets/SiteMap";
+import {Component, Input, OnInit,OnChanges, SimpleChanges} from '@angular/core';
 import {MenuItem} from "../../../assets/menu-item";
 import {FormsModule, NgForm} from "@angular/forms";
 import {Router} from "@angular/router";
@@ -12,12 +11,18 @@ import {TranslateService} from "@ngx-translate/core";
   templateUrl: './side-bar.component.html',
   styleUrls: ['./side-bar.component.css']
 })
-export class SideBarComponent implements OnInit {
-  public menuItems:MenuItem[] = Sitemap;
+export class SideBarComponent implements OnInit, OnChanges {
+  @Input() menuItems: MenuItem[];
+
   constructor(
-    private route:Router,
-    private translate:TranslateService,
-    private toastr: ToastrService) { }
+    private route: Router,
+    private translate: TranslateService,
+    private toastr: ToastrService) {
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+        console.log("Sidebar onchange:",this.menuItems);
+    }
 
   ngOnInit(): void {
   }

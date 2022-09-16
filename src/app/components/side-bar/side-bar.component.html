@@ -34,10 +34,10 @@
             <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
-          <ul class="treeview-menu">
-            <ng-container *ngFor="let subItem of item.children">
+          <ul class="treeview-menu"  *ngFor="let subItem of item.children">
+
               <li><a routerLink="{{subItem.path}}"><i class="fa fa-circle-o"></i> {{ subItem.name | translate}}</a></li>
-            </ng-container>
+
           </ul>
         </li>
         </ng-container>

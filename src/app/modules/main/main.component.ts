@@ -16,11 +16,11 @@ export class MainComponent implements OnInit {
   sitemap = Sitemap;
   menuItem: MenuItem|undefined;
   constructor(private sharedService: SharedService) {
+    console.log("Sitemap",this.sitemap);
     // 註冊導覽列
     this.sharedService.changeEmittedBreadcrumb$.subscribe(
       change => {
         console.log("change=", change);
-
         let mainItem={
           name: 'Home',
           subTitle: 'Home',

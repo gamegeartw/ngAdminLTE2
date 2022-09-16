@@ -10,7 +10,7 @@ export class SharedService {
   /**
    * 訂閱導覽列
    */
-  emitChangeTitle = new Subject<string>()
+  emitChangeTitle = new Subject<string>();
 
   /**
    * 導覽列Observable

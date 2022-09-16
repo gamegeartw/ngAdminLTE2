@@ -16,7 +16,7 @@
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <select name="lang" id="lang" class="form-control" (change)="langService.use(langSelect.value)" #langSelect [(ngModel)]="lang">
+        <select name="lang" id="lang" class="form-control" (change)="langService.setDefaultLang(langSelect.value)" #langSelect [(ngModel)]="lang">
 
           <option *ngFor="let lang of langService.langs" [selected]="lang===langService.currentLang" [value]="lang">{{lang|translate}}</option>
         </select>

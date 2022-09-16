@@ -1,7 +1,7 @@
 <block-ui>
   <div class="wrapper">
     <app-appheader></app-appheader>
-    <app-side-bar></app-side-bar>
+    <app-side-bar [menuItems]="sitemap"></app-side-bar>
     <div class="content-wrapper">
       <app-bread-crumb [menuItem]="menuItem"></app-bread-crumb>
       <section class="content">

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
 import {ActivatedRoute, Router} from "@angular/router";
+import {AuthService} from "../services/auth.service";
 declare var $: any;
 
 @Component({
@@ -14,9 +15,9 @@ export class LoginComponent implements OnInit {
   user:string='';
   password:string='';
 
-  constructor(public langService:TranslateService,private route:ActivatedRoute,private router:Router) {
+  constructor(public langService:TranslateService,private route:ActivatedRoute,private router:Router,private authService:AuthService) {
     const browserLang = langService.getBrowserLang();
-    langService.use(browserLang.match(/en|fr/) ? browserLang : 'en');
+    langService.use(browserLang.match(/en|zh-cn|zh-tw/) ? browserLang : 'en');
   }
 
   ngOnInit(): void {
@@ -36,6 +37,7 @@ export class LoginComponent implements OnInit {
     console.log(this.password);
 
     // TODO: Login Service
-    this.router.navigate(["/"]);
+    this.authService.Login(this.user,this.password);
+    this.router.navigate(["./Reload"]);
   }
 }

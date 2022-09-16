@@ -18,6 +18,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import {HttpClient,HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { ReloadComponent } from './components/reload/reload.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -34,6 +35,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent,
     MainComponent,
     BreadCrumbComponent,
+    ReloadComponent,
 
   ],
   imports: [
